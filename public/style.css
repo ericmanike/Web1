@@ -1,0 +1,96 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&display=swap');
+
+
+ 
+.layout{
+    background-color: #800000;
+color: #FFFDD0;
+  font-family: "Roboto";
+
+    font-size:22px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .5fr 1.8fr 1.5fr 1.5fr 1fr;
+    grid-template-areas: "header"
+                         "aboutme"
+                         "techxpo"
+                         "services"
+                        "footer";
+}
+
+nav {
+    font-family: "Rowdies",'Times New Roman', Times, serif;
+    display: none;
+    background-color:#FFFDD0;
+    color:   #800000;;
+
+}
+.header{
+   color: #EB5B00;
+    grid-area: header;
+    background-color: #000435;
+}
+.aboutme{
+    background-color: blue;
+     grid-area: aboutme;
+}
+.aboutmeunderline{position: relative
+}
+.aboutmeunderline::before{
+    content: "";
+    background-color: chocolate;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 40px;
+    height: 3px;
+    border-radius: 5px;
+
+
+}
+
+.techxpo{ 
+    background-color: brown;
+     grid-area: header;
+
+}
+.techxpounderline{position: relative
+}
+.techxpounderline::before{
+    content: "";
+    background-color: chocolate;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 182px;
+    height: 3px;
+    border-radius: 5px;
+
+
+}
+.services{
+     grid-area: services;
+     background-color: rgba(0, 0, 0, 0.393);
+}
+
+
+.serviceunderline{position: relative
+}
+.serviceunderline::before{
+    content: "";
+    background-color: chocolate;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 5px;
+    border-radius: 5px;
+}
+.footer{
+     grid-area: footer;
+     background-color: #000435;
+     color:whitesmoke;
+}
