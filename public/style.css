@@ -1,7 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&display=swap');
 
-
+#top1{
+    display: none;
+}
  
 .layout{
 color:#FFFF;
@@ -10,7 +12,7 @@ color:#FFFF;
     font-size:22px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: .2fr 0.7fr 0.6fr .7fr .7fr;
+    grid-template-rows: .2fr 0.8fr 0.8fr .7fr .7fr;
     grid-template-areas: "header"
                          "aboutme"
                          "techxpo"
@@ -32,7 +34,7 @@ nav {
      grid-area: aboutme;
 }
 
-.aboutMeContent{
+.serve,.aboutMeContent{
     box-shadow: 0px 0px 30px rgba(76, 0, 130, 0.459); 
 }
 
@@ -53,7 +55,7 @@ nav {
 }
 
 .techxpo{ 
-    background-color: brown;
+
      grid-area: header;
 
 }
@@ -102,4 +104,21 @@ nav {
     color: #EB5B00;
     text-decoration-thickness: 5px;
     text-decoration-color: #800000;
+}
+
+#animatedheader{
+    width: 0px;
+white-space: nowrap;
+    border-right: 2px solid #EB5B00 ;
+    overflow: hidden ;
+    animation: typing 2s steps(20,end)  infinite alternate, blink 0.9s  step-end infinite;
+}
+@keyframes typing {
+   from {width: 0px;}
+    to {width: 130px;}
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+  100% { border-color: #EB5B00; }
 }

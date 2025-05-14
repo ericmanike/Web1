@@ -10,13 +10,13 @@
 </head>
 <body class="relative"> 
     
+ <div id="top1" class="fixed right-0 bottom-[10vh] cursor-pointer"> <img src="images/top.png"></div>
  
-
 
 <div  class="h-max layout md:text-3xl bg-indigo-950">
  
 
-<div class="header flex flex-row justify-between flex-nowrap">
+<div class="header flex flex-row justify-between flex-nowrap ">
 
        
 <nav id="nav" class ="flex flex-col flex-nowrap justify-center items-center   text-2xl  w-max h-60 absolute top-20 right-0 rounded-3xl p-3
@@ -26,6 +26,7 @@ md:bg-none
 md:grid md:grid-cols-[0.5fr_1fr_0.5fr]
 md:h-fit
 md:gap-7
+
 max-md:hidden">
   
     <a  href="#aboutme" class="p-2 hover:bg-[#FFFDD0] rounded-2xl">About Me</a>
@@ -35,23 +36,25 @@ max-md:hidden">
 </nav>
 
     
-<div class="p-1"><img src="images/2ndpic.png" alt="Profile" width="100px" height="100px"><div>Eric Manike Haare<br> <b>Webmaster</b></div> </div>
+<div class="p-1"><img src="images/2ndpic.png" alt="Profile" width="100px" height="100px"><div>Eric Manike Haare<br>I'm a  <h3 id="animatedheader">Webmaster</h3></div> </div>
 <div class="mt-2 w-[42px] h-[43px] "><img src="images/menu1.png" width="50px" height="50px" class="cursor-pointer p-1 md:hidden" id="menubar">
 </div>
 
 </div>
 
-<div id="aboutme" class="about mt-6 p-6">
+<div id="aboutme" class="about mt-10 p-6">
 <h3 class="aboutmeunderline font-bold mb-2 flex justify-center items-center">
     About Me
 </h3>
 <div class="aboutMeContent grid grid-cols-1 md:grid-cols-2 p-5 rounded-2xl">
-    <div   class="text-justify">
-         Hey there! I’m Eric Manike Haare, a curious mind with a big heart for tech and an even bigger dream for Africa’s future. I’m currently studying Information Technology at KNUST as a proud Mastercard Foundation Scholar—a journey that’s shaped not just my skills, but my purpose. I believe technology is more than just code—it’s a powerful tool to educate, connect, and transform lives. That’s why I’m passionate about building digital solutions that solve real problems, especially in education and community development.At the core of everything I do is a desire to lead, serve, and inspire. I’m not just learning tech—I’m using it to make a difference.
-          Let’s build something that matters.
+    <div   class="text-justify flex flex-col">
+        <p> Hey there! I’m Eric Manike Haare, a curious mind with a big heart for tech and an even bigger dream for Africa’s future. I’m currently studying<span class="text-[chocolate]"> Information Technology at KNUST as a proud Mastercard Foundation Scholar,</span>I believe technology is more than just code—it’s a powerful tool to educate, connect, and transform lives. I’m passionate about building digital solutions that solve real problems. At the core of everything I do is a desire to lead, serve, and inspire.
+        Let’s build something realistic together 🤝.
+        </p>
+          <button class="text-amber-50 text-2xl p-2 my-5 md:my-20  transition-colors duration-300 bg-indigo-500 w-[50%] self-center hover:bg-indigo-600 rounded-[10px]  " id="myResume">My Resume</button>
     </div>
      <div class="  md:self-end  md:ml-10 lg:ml-35 ">
-        <img src="images/IMG_0321_1_-removebg-preview.png" class="transition-transform duration-1000 hover:scale-90  border-2 rounded-2xl hover:border-amber-600 hover:bg-linear-to-r from-amber-50 via-[green] to to-blue-600 ">
+        <img src="images/IMG_0321_1_-removebg-preview.png" class="transition-transform duration-1000 hover:scale-95  border-2 rounded-2xl hover:border-amber-600 hover:bg-linear-to-r from-amber-50 via-[green] to to-blue-600 ">
      </div>
 </div>
 
@@ -73,15 +76,15 @@ max-md:hidden">
 
        <li>Skilled in Git/GitHub for version control and collaborative workflows.</li>
 
-       <li>Knowledgeable in basic website performance optimization and SEO principles.</li>
+       <li>Knowledgeable in basic website performance </li>
 
        <li> Proficient in Photoshop for graphic design and visual content creation.</li>
 
         <li> Deployed websites using platforms such as Netlify, Vercel, and GitHub Pages.</li>
     </ul>
     <div class="my-5 flex flex-col items-center">
-     <h3> My RecentProjects</h3> 
-      <button class="p-2 font-bold rounded-2xl shadow-2xl/20 bg-amber-50 text-amber-300 w-fit cursor-pointer mt-2">here &#x219D;</button></div>
+     <h3> My Recent Projects</h3> 
+      <button class="p-2 font-bold rounded-2xl shadow-2xl/20 bg-amber-50 text-amber-300 w-fit text-2xl cursor-pointer mt-2">here &#x219D;</button></div>
  </div>
  <div class="flex flex-row gap-3 justify-center md:flex-col md:items-center md:ml-30">
    
@@ -97,42 +100,38 @@ max-md:hidden">
 <div class="service" id="services">
  <div class="serviceunderline m-5 text-3xl font-bold flex justify-center">Services </div>
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-3 p-5">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-5">
    
 
-<div class=" border-2 border-amber-300 rounded-[10px] p-3" >
-<p>website Development Services</p>
-As a professional website designer, I specialize in creating beautiful, functional websites that not only look great but also deliver a seamless user experience. Whether you're a small business, a startup, or an individual looking to build your online presence, I craft websites that are:
+<div class="serve rounded-[10px] p-3" >
+<p  class="text-center  underline text-3xl">Website Development Services</p>
+looking to build your online presence, I craft websites that are:
+<ul class="list-image-[url(images/check.png)] pl-6">
+<li>User-Friendly </li> <li>Easy to navigate,</li> <li>fast-loading,</li> <li class="text-[chocolate]">And mobile-responsive</li>
 
-User-Friendly – Easy to navigate, fast-loading, and mobile-responsive
-
-Visually Stunning – Designed with a modern aesthetic and attention to detail
-Services Offered:
-Custom Website Design
-Portfolio & Business Websites
-Landing Pages
-Blog and Content Sites
+<ul class="list-image-[url(images/w1.png)] pl-6">
+I create 
+<li>Custom Website Design</li>
+<li>Portfolio & Business Websites</li>
+<li>Landing Pages</li>
+<li>Blog and Content Sites</li>
+</ul>
+</ul>
 </div>
 
 
-<div class="border-2 border-amber-300 rounded-[10px] p-3">
-<p>Graphic Design Services</p>
+<div class="serve rounded-[10px] p-5 text-justify ">
+<p class="text-3xl text-center underline ">Graphic Design Services</p>
 Stand out with bold, creative, and professional visuals that tell your brand’s story.
 
-I offer high-quality graphic design services tailored to meet your branding, marketing, and communication needs. Whether you're building a new identity or refreshing your current look, I’m here to bring your ideas to life through impactful design.
-What I Offer:
-Logos & Brand Identity 
-Flyers & Posters 
-Social Media Graphics 
-Business Cards & Stationery 
-Every design is crafted with attention to detail, originality, and your unique vision in mind.
+I offer <span class="text-[chocolate] ">high-quality graphic design </span> tailored to meet your branding, marketing, and communication needs. Whether you're building a new identity or refreshing your current look, I’m here to bring your ideas to life through impactful design.
 </div>
 
 
-</div>
-<hr />
+</div> 
+<hr  class="h-1"/>
 <h3 class="text-3xl text-center"> Contact Me  &#8623;</h3>
-<hr />
+
 </div>
 <!--footer section-->
 
@@ -141,7 +140,7 @@ Every design is crafted with attention to detail, originality, and your unique v
     
     <div class="text-center">
         <strong>Contact Form</strong>
-          <div><form>
+          <div><form name="contact" method="POST" data-netlify="true">
             
                 <input type="text" placeholder="Full Name.." class="bg-transparent rounded-2xl text-white w-60 h-15 text-center border-2 border-amber-300 "><br><br>
             
@@ -151,9 +150,9 @@ Every design is crafted with attention to detail, originality, and your unique v
                 
             
                 <textarea cols="21" 
-                rows="3" placeholder="Message.." class="bg-transparent rounded-2xl text-white  text-center border-2 border-amber-300"></textarea><br>
+                rows="3" placeholder="Message.." class="bg-transparent rounded-2xl text-white  text-center border-2 border-amber-300"></textarea><br><br>
                 <input type="submit"
-                class="bg-amber-300 rounded-2xl text-white w-60 h-15 text-center border-2 " value="Send Messag">
+                class="bg-amber-300 rounded-2xl text-white w-60 h-15 text-center border-2 " value="Send Message">
                 </form></div>
     </div>
 
@@ -165,10 +164,10 @@ Every design is crafted with attention to detail, originality, and your unique v
     <p class="mt-5"> Socials</p>
       <div class="flex flex-row  justify-center gap-8 mb-2 ">
         
-        <img src="images/linkedin.png" width="30px" height="30px"> 
-            <img src="images/twitter.png" width="30px" height="30px" > 
-            <img src="images/facebook.png" width="30px" height="30px"> 
-            <img src="images/whatsapp.png" width="30px" height="30px">
+        <a href="https://www.linkedin.com/in/eric-manike-811126261?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BpEeHLYzjSjKfN7py%2FC3JZg%3D%3D">
+          <img src="images/linkedin.png" width="30px" height="30px"> </a>
+          <a href="https://www.facebook.com/people/Eric-Manike-Haare/61570158134856/">  <img src="images/facebook.png" width="30px" height="30px"> </a>
+          <a href="https://wa.me/233509352247">  <img src="images/whatsapp.png" width="30px" height="30px"></a>
       </div>
     </div>
   
