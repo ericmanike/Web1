@@ -1,5 +1,5 @@
 const menubar = document.getElementById("menubar");
-const links =document.querySelectorAll("a");
+const links = document.querySelectorAll("a");
 const navigations = document.getElementById("nav");
 
 menubar.addEventListener('click',()=>{
@@ -21,3 +21,19 @@ menubar.addEventListener('click',()=>{
     }
     })
  })
+
+ function Update(){
+
+ links.forEach(link=>{
+  if(window.location.hash == link.hash){
+    link.classList.add("active");
+    
+  }
+  else{
+    link.classList.remove("active")
+  }
+})
+ }
+ window.addEventListener('hashchange',Update)
+
+ 

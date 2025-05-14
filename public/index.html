@@ -8,76 +8,176 @@
     <link rel="stylesheet" href="output.css">
     
 </head>
-<body class="relative" background="images/bg1.jpg"> 
+<body class="relative"> 
     
-    
-<nav id="nav" class ="flex flex-col flex-nowrap justify-center items-center   text-2xl  w-max h-60 absolute top-20 right-0 z-10   rounded-3xl p-3">
-  
-    <a  href="#aboutme">About Me</a>
-    <a href="#techxpo" class="my-7">Technical Experience</a>
-    <a href="#services">Services</a>
-
-</nav>
+ 
 
 
-
-<div  class="h-max layout ">
+<div  class="h-max layout md:text-3xl bg-indigo-950">
  
 
 <div class="header flex flex-row justify-between flex-nowrap">
+
+       
+<nav id="nav" class ="flex flex-col flex-nowrap justify-center items-center   text-2xl  w-max h-60 absolute top-20 right-0 rounded-3xl p-3
+max-md:bg-[#FFFDD0]
+md:bg-none
+ md:top-5 md:right-4
+md:grid md:grid-cols-[0.5fr_1fr_0.5fr]
+md:h-fit
+md:gap-7
+max-md:hidden">
+  
+    <a  href="#aboutme" class="p-2 hover:bg-[#FFFDD0] rounded-2xl">About Me</a>
+    <a href="#techxpo" class="my-7 p-2 hover:bg-[#FFFDD0] rounded-2xl">Technical Experience</a>
+    <a href="#services" class="p-2 hover:bg-[#FFFDD0] rounded-2xl">Services</a>
+
+</nav>
+
     
 <div class="p-1"><img src="images/2ndpic.png" alt="Profile" width="100px" height="100px"><div>Eric Manike Haare<br> <b>Webmaster</b></div> </div>
-<div class="mt-2 w-[42px] h-[43px] "><img src="images/menu1.png" width="40px" height="40px" class="cursor-pointer p-1" id="menubar">
+<div class="mt-2 w-[42px] h-[43px] "><img src="images/menu1.png" width="50px" height="50px" class="cursor-pointer p-1 md:hidden" id="menubar">
 </div>
 
 </div>
 
-<div class="about mt-6 p-6">
-<h3 class="aboutmeunderline font-bold mb-2">
+<div id="aboutme" class="about mt-6 p-6">
+<h3 class="aboutmeunderline font-bold mb-2 flex justify-center items-center">
     About Me
 </h3>
-<div class="flex flex-row justify-between flex-wrap align-top aboutMeContent">
-    <div class="w-[50%] text-base" >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Quasi, veritatis ipsa! Beatae, consectetur harum in obcaecati eaque odit enim laboriosam. Corrupti dolorum, veniam quae at minus dolores ipsam explicabo quia.
+<div class="aboutMeContent grid grid-cols-1 md:grid-cols-2 p-5 rounded-2xl">
+    <div   class="text-justify">
+         Hey there! I’m Eric Manike Haare, a curious mind with a big heart for tech and an even bigger dream for Africa’s future. I’m currently studying Information Technology at KNUST as a proud Mastercard Foundation Scholar—a journey that’s shaped not just my skills, but my purpose. I believe technology is more than just code—it’s a powerful tool to educate, connect, and transform lives. That’s why I’m passionate about building digital solutions that solve real problems, especially in education and community development.At the core of everything I do is a desire to lead, serve, and inspire. I’m not just learning tech—I’m using it to make a difference.
+          Let’s build something that matters.
     </div>
-     <div class="w-[50%]">
-        <img src="images/IMG_0321_1_-removebg-preview.png" width="auto" height="auto" class="object-cover z-10">
+     <div class="  md:self-end  md:ml-10 lg:ml-35 ">
+        <img src="images/IMG_0321_1_-removebg-preview.png" class="transition-transform duration-1000 hover:scale-90  border-2 rounded-2xl hover:border-amber-600 hover:bg-linear-to-r from-amber-50 via-[green] to to-blue-600 ">
      </div>
 </div>
 
 
 </div>
-<div class="tectxpo mt-3" > 
+<div class="tectxpo mt-3" id="techxpo" > 
+    <div class="flex justify-center items-center"> <img src="images/technical-support.png" width="50px" height="50px"> </div>
+    <div class="techxpounderline flex justify-center font-bold mb-5">Technical Experience</div>
+     
+
+    <div class="grid grid-cols-1 md:grid-cols-2">
+
+  <div>
+  <ul class="list-image-[url(images/check1.png)] pl-10 ">
     
-    <div class="techxpounderline flex justify-center font-bold">Technical Experience</div>
+    <li> Proficient in HTML, CSS, and JavaScript for building responsive and interactive websites.</li>
+
+   <li> Intermediate beginner in React.js and familiar with Tailwind CSS for UI styling.</lI>
+
+       <li>Skilled in Git/GitHub for version control and collaborative workflows.</li>
+
+       <li>Knowledgeable in basic website performance optimization and SEO principles.</li>
+
+       <li> Proficient in Photoshop for graphic design and visual content creation.</li>
+
+        <li> Deployed websites using platforms such as Netlify, Vercel, and GitHub Pages.</li>
+    </ul>
+    <div class="my-5 flex flex-col items-center">
+     <h3> My RecentProjects</h3> 
+      <button class="p-2 font-bold rounded-2xl shadow-2xl/20 bg-amber-50 text-amber-300 w-fit cursor-pointer mt-2">here &#x219D;</button></div>
+ </div>
+ <div class="flex flex-row gap-3 justify-center md:flex-col md:items-center md:ml-30">
+   
+    <img src="images/html.png" width="80px" height="50px">
+   <img src="images/js.jpeg" width="80px" height="50px">
+    <img src="images/tailwind.png" width="80px" height="50px">
+      <img src="images/pshop.png" width="80px" height="50px">
+ </div>
+
+    </div>
 </div>
 
-<div class="service">
+<div class="service" id="services">
  <div class="serviceunderline m-5 text-3xl font-bold flex justify-center">Services </div>
-<div class=" flex flex-row flex-wrap gap-10 p-10 justify-center" >
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-3 p-5">
    
 
-<div>website Development user friendly software</div>
-<div>Graphic Designer</div>
+<div class=" border-2 border-amber-300 rounded-[10px] p-3" >
+<p>website Development Services</p>
+As a professional website designer, I specialize in creating beautiful, functional websites that not only look great but also deliver a seamless user experience. Whether you're a small business, a startup, or an individual looking to build your online presence, I craft websites that are:
+
+User-Friendly – Easy to navigate, fast-loading, and mobile-responsive
+
+Visually Stunning – Designed with a modern aesthetic and attention to detail
+Services Offered:
+Custom Website Design
+Portfolio & Business Websites
+Landing Pages
+Blog and Content Sites
+</div>
+
+
+<div class="border-2 border-amber-300 rounded-[10px] p-3">
+<p>Graphic Design Services</p>
+Stand out with bold, creative, and professional visuals that tell your brand’s story.
+
+I offer high-quality graphic design services tailored to meet your branding, marketing, and communication needs. Whether you're building a new identity or refreshing your current look, I’m here to bring your ideas to life through impactful design.
+What I Offer:
+Logos & Brand Identity 
+Flyers & Posters 
+Social Media Graphics 
+Business Cards & Stationery 
+Every design is crafted with attention to detail, originality, and your unique vision in mind.
+</div>
 
 
 </div>
+<hr />
+<h3 class="text-3xl text-center"> Contact Me  &#8623;</h3>
+<hr />
+</div>
+<!--footer section-->
 
+<div class="footer grid grid-cols-1 md:grid-cols-2 p-5">
+  
+    
+    <div class="text-center">
+        <strong>Contact Form</strong>
+          <div><form>
+            
+                <input type="text" placeholder="Full Name.." class="bg-transparent rounded-2xl text-white w-60 h-15 text-center border-2 border-amber-300 "><br><br>
+            
+                <input type="text" placeholder="Email.." class="bg-transparent rounded-2xl text-white w-60 h-15 text-center border-2 border-amber-300 ">
+                <br>
+                <br>
+                
+            
+                <textarea cols="21" 
+                rows="3" placeholder="Message.." class="bg-transparent rounded-2xl text-white  text-center border-2 border-amber-300"></textarea><br>
+                <input type="submit"
+                class="bg-amber-300 rounded-2xl text-white w-60 h-15 text-center border-2 " value="Send Messag">
+                </form></div>
+    </div>
+
+    <div class=" text-center ">
+       
+      <p>Location</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31701.558736665538!2d-1.572864!3d6.684672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sgh!4v1747107884346!5m2!1sen!2sgh" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    <p class="mt-5"> Socials</p>
+      <div class="flex flex-row  justify-center gap-8 mb-2 ">
+        
+        <img src="images/linkedin.png" width="30px" height="30px"> 
+            <img src="images/twitter.png" width="30px" height="30px" > 
+            <img src="images/facebook.png" width="30px" height="30px"> 
+            <img src="images/whatsapp.png" width="30px" height="30px">
+      </div>
+    </div>
+  
 </div>
 
 
-<div class="footer">
 
- <div class="flex flex-row justify-around mt-3">
- <div>Socials</div>
- <div> contact form</div>
- </div>
-<span></span>
-</div>
 
 </div>
-
 <script src="index.js">
 
 </script>
