@@ -83,3 +83,65 @@ menubar.addEventListener('click',()=>{
   document.body.scrollTop =0;
   document.documentElement.scrollTop =0;
  }
+
+ const fades =document.querySelectorAll(".serve");
+
+ Options = {
+  root:null,
+  threshold:0.5
+
+ } 
+
+ let lastscroll = window.scrollY
+
+ 
+ const observer = new IntersectionObserver(function(entries,observer){
+  let currentscroll = window.scrollY;
+
+  const isScrollDown = currentscroll > lastscroll;
+ lastscroll = currentscroll
+  
+  entries.forEach(entry=>{
+if(entry.isIntersecting ){
+  entry.target.classList.add("fadein")
+}
+ if(!entry.isIntersecting){
+  entry.target.classList.remove("fadein")
+}
+
+})
+
+ },Options)
+
+ fades.forEach(fade=>{
+  observer.observe(fade)
+ });
+
+ const images = document.querySelectorAll("[data-src]");
+ Option = {
+  root:null,
+  threshold:1
+ }
+
+ function loadimg(img){
+  const src = img.getAttribute("data-src");
+  img.src = src;
+  if(!src){
+    
+  }
+
+ }
+ const imgobserver = new IntersectionObserver(function(entries,imgobserver){
+entries.forEach(entry=>{
+  if(!entry.isIntersecting){
+    return
+  }else{
+  loadimg(entry.target)
+  
+  }
+  })
+ },Option)
+
+ images.forEach(image=>{
+ imgobserver.observe(image)
+})

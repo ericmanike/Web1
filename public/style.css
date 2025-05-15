@@ -122,3 +122,14 @@ white-space: nowrap;
   50% { border-color: transparent; }
   100% { border-color: #EB5B00; }
 }
+
+
+.serve{
+    opacity: 0;
+    transform: translateY(20px);
+  transition: transform .5s ease-in,opacity 0.5s ease-in;
+}
+.fadein{
+    transform:translateY(0px);
+    opacity: 1;
+}
