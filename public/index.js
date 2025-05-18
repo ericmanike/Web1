@@ -4,7 +4,11 @@ const navigations = document.getElementById("nav");
 const top1 = document.getElementById("top1");
 
  let form = document.getElementById("my-form");
+ const loader = document.getElementById("load")
   
+  window.onload = function(){
+  loader.style.display ="none"
+ }
   async function handleSubmit(event) {
     event.preventDefault();
     let status = document.getElementById("my-form-status");
@@ -34,6 +38,10 @@ const top1 = document.getElementById("top1");
   }
   form.addEventListener("submit", handleSubmit);
 
+  //end of form submission
+
+
+//toggling menubar
 menubar.addEventListener('click',()=>{
     if(menubar.src.includes("images/menu1.png")){
     nav.style.display ="flex";
@@ -54,6 +62,7 @@ menubar.addEventListener('click',()=>{
     })
  });
 
+//Current link
  function Update(){
 
  links.forEach(link=>{
@@ -69,7 +78,7 @@ menubar.addEventListener('click',()=>{
  window.addEventListener('hashchange',Update);
 
 
-
+//Go To Top button
  window.onscroll =function(){
 
   if (document.body.scrollTop >100 || document.documentElement.scrollTop>100){
@@ -82,8 +91,9 @@ menubar.addEventListener('click',()=>{
  top1.onclick =function(){
   document.body.scrollTop =0;
   document.documentElement.scrollTop =0;
- }
+ };
 
+ // intersection observer
  const fades =document.querySelectorAll(".serve");
 
  Options = {
