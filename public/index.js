@@ -6,8 +6,8 @@ const top1 = document.getElementById("top1");
  let form = document.getElementById("my-form");
  const loader = document.getElementById("load");
  //loading animation 
-  window.onload = function(){
-  loader.style.display ="none"
+   window.onload = function(){
+ loader.style.display ="none"
  }
   async function handleSubmit(event) {
     event.preventDefault();
