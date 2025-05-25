@@ -2,7 +2,11 @@ const menubar = document.getElementById("menubar");
 const links = document.querySelectorAll("a");
 const navigations = document.getElementById("nav");
 const top1 = document.getElementById("top1");
+const cvbtn =  document.getElementById("myResume")
 
+cvbtn.addEventListener('click',()=>{
+  window.open("images/CV.pdf" ,"_blank")
+})
  let form = document.getElementById("my-form");
  const loader = document.getElementById("load");
  //loading animation 
