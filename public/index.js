@@ -3,6 +3,39 @@ const links = document.querySelectorAll("a");
 const navigations = document.getElementById("nav");
 const top1 = document.getElementById("top1");
 const cvbtn =  document.getElementById("myResume")
+const Fullimg = document.getElementById("Fullpic")
+
+//image slide 
+function slide(){
+imgs = ["images/d2.png",
+        "images/d1.jpg"
+]
+let index = 0;
+showimg(index)
+function showimg(i){
+  Fullimg.src= imgs[i]
+  Fullimg.style.display = "block";
+  Fullimg.style.animation = "none";
+  void Fullimg.offsetWidth
+  Fullimg.style.animation ="fade 5s ease-in-out"
+
+}
+
+function next(){
+  index = (index+1)% imgs.length
+  showimg(index)
+}
+ let setIntervalId = setInterval(next,5000);
+
+ Fullimg.onclick = ()=>{
+  clearInterval(setIntervalId)
+ }
+}
+
+
+slide()
+
+//CV section
 
 cvbtn.addEventListener('click',()=>{
   window.open("images/CV.pdf" ,"_blank")
